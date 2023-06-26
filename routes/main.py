@@ -47,7 +47,7 @@ def getProfile(name: str):
         'createdBy':name,
     }
     try:
-        response = postDTO(connection.quickq.PostDocument.find_one(params))
+        response = postEntity(connection.quickq.PostDocument.find(params))
         print(params)
         if response is not None:
             return(response)
