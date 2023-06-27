@@ -4,4 +4,5 @@ def profileDTO(item) -> dict:
         "rate":item["rate"],
         "image":item["image"],
         "name":item["name"],
+        "email":item["email"]
     }
