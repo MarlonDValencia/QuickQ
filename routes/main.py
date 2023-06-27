@@ -26,10 +26,10 @@ def getUserLogged(user: str, password:str):
     except TypeError:
         return("Error: No se encontró el documento.")
     
-@main.get('/profile/{id}')
-def getProfile(id: str):
+@main.get('/profile/{email}')
+def getProfile(email: str):
     params = {
-        'id':id,
+        'email':email,
     }
 
     try:
